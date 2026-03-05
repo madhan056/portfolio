@@ -1,0 +1,75 @@
+import { motion } from "framer-motion";
+import { ExternalLink, Database, Bot, CheckSquare } from "lucide-react";
+
+const projects = [
+  {
+    icon: Bot,
+    title: "Face Recognition Attendance System",
+    tech: ["Python", "ArcFace", "OpenCV", "MySQL", "ONNX Runtime"],
+    description:
+      "Automated attendance system using ArcFace for real-time face detection and recognition via webcam. Stores attendance data (name, date, time) in MySQL. Utilizes opencv-contrib-python, onnxruntime, and insightface for optimized performance.",
+  },
+  {
+    icon: CheckSquare,
+    title: "Task Management System",
+    tech: ["Django REST Framework", "React.js", "RESTful APIs"],
+    description:
+      "Full-stack task management app with backend focus. Implemented APIs for task CRUD, filtering, status management, prioritization, deadline tracking, analytics data generation, and CSV export with clean API architecture.",
+  },
+  {
+    icon: Database,
+    title: "WhatsApp Automation Tool (Inaiwazhi)",
+    tech: ["Flask", "PostgreSQL", "Twilio API", "Meta WhatsApp API", "Docker"],
+    description:
+      "Backend system for messaging automation and campaign management. Features RESTful APIs, Wasabi S3 media storage, Supabase auth, CI/CD with GitHub Actions, and Nginx deployment on Linux cloud servers.",
+  },
+];
+
+const ProjectsSection = () => {
+  return (
+    <section id="projects" className="section-container">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="font-mono text-primary text-sm mb-2">{"// projects"}</h2>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12">
+          Featured <span className="text-gradient-primary">Projects</span>
+        </h3>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, i) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.12 }}
+              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all hover:shadow-[0_0_30px_hsl(175_80%_50%/0.06)]"
+            >
+              <project.icon className="w-8 h-8 text-primary mb-4 group-hover:drop-shadow-[0_0_8px_hsl(175_80%_50%/0.5)] transition-all" />
+              <h4 className="text-lg font-semibold text-foreground mb-2">{project.title}</h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {project.tech.map((t) => (
+                  <span
+                    key={t}
+                    className="px-2 py-1 text-[10px] font-mono rounded bg-muted text-primary border border-primary/10"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
