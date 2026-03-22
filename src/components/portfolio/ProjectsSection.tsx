@@ -5,16 +5,16 @@ const projects = [
   {
     icon: Bot,
     title: "Face Recognition Attendance System",
-    tech: ["Python", "ArcFace", "OpenCV", "MySQL", "ONNX Runtime"],
+    tech: ["Python", "MySQL", "ArcFace", "OpenCV"],
     description:
-      "Automated attendance system using ArcFace for real-time face detection and recognition via webcam. Stores attendance data (name, date, time) in MySQL. Utilizes opencv-contrib-python, onnxruntime, and insightface for optimized performance.",
+      "Automated attendance system developed using ArcFace, OpenCV, and MySQL for real-time face detection and recognition via webcam. Stores attendance data (name, date, time) in the database. Utilizes opencv-contrib-python, onnxruntime, and insightface for optimized face recognition performance.",
   },
   {
     icon: CheckSquare,
     title: "Task Management System",
-    tech: ["Django REST Framework", "React.js", "RESTful APIs"],
+    tech: ["Python", "SQLite", "Django", "React.js"],
     description:
-      "Full-stack task management app with backend focus. Implemented APIs for task CRUD, filtering, status management, prioritization, deadline tracking, analytics data generation, and CSV export with clean API architecture.",
+      "Full-stack task management app with backend focus. Developed using Django REST Framework and React.js, implementing APIs for task CRUD operations, filtering, status management, prioritization, deadline tracking, analytics data generation, and CSV export, with a clean and efficient API architecture.",
   },
 ];
 
