@@ -35,9 +35,9 @@ const Navbar = () => {
           <motion.div
             animate={{ y: [0, -4, 0] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_10px_hsl(160_84%_39%/0.2)]"
+            className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_10px_hsl(160_84%_39%/0.2)] bg-card"
           >
-            <img src={`${import.meta.env.BASE_URL}profile.webp`} alt="Avatar" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="Avatar" className="w-full h-full object-cover" />
           </motion.div>
           <a href="#" className="font-mono text-primary font-bold text-sm hidden sm:block">
             {"madhan_thangavel()"}

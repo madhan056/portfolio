@@ -54,7 +54,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 text-gradient-primary uppercase"
             >
-              Madhan Thangavel.
+              Madhan Thangavel
             </motion.h1>
 
             <motion.h2
@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-3xl md:text-5xl font-bold text-foreground mb-8 tracking-tight"
             >
-              Python Backend Developer.
+              Python Backend Developer
             </motion.h2>
 
             <motion.p
