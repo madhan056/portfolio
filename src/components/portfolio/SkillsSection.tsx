@@ -42,7 +42,7 @@ const SkillsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2">{"// skills"}</h2>
+        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Skills</h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-12">
           Tech <span className="text-gradient-primary">Stack</span>
         </h3>

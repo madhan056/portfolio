@@ -16,13 +16,6 @@ const projects = [
     description:
       "Full-stack task management app with backend focus. Implemented APIs for task CRUD, filtering, status management, prioritization, deadline tracking, analytics data generation, and CSV export with clean API architecture.",
   },
-  {
-    icon: Database,
-    title: "WhatsApp Automation Tool (Inaiwazhi)",
-    tech: ["Flask", "PostgreSQL", "Twilio API", "Meta WhatsApp API", "Docker"],
-    description:
-      "Backend system for messaging automation and campaign management. Features RESTful APIs, Wasabi S3 media storage, Supabase auth, CI/CD with GitHub Actions, and Nginx deployment on Linux cloud servers.",
-  },
 ];
 
 const ProjectsSection = () => {
@@ -34,7 +27,7 @@ const ProjectsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2">{"// projects"}</h2>
+        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Projects</h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-12">
           Featured <span className="text-gradient-primary">Projects</span>
         </h3>

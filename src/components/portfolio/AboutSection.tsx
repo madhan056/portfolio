@@ -17,7 +17,7 @@ const AboutSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2">{"// about"}</h2>
+        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">About</h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-8">
           About <span className="text-gradient-primary">Me</span>
         </h3>

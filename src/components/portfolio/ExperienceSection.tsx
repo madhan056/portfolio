@@ -33,16 +33,6 @@ const experiences = [
       "Designed and optimized MySQL databases with constraints and relational schemas",
     ],
   },
-  {
-    company: "Uddhava Logistics Pvt Limited",
-    role: "MIS Executive",
-    period: "Aug 2024 – Nov 2024",
-    location: "Chennai",
-    points: [
-      "Ensured accurate data entry and maintained system integrity from invoices",
-      "Generated MIS reports and contributed to data analysis for operational efficiency",
-    ],
-  },
 ];
 
 const ExperienceSection = () => {
@@ -54,7 +44,7 @@ const ExperienceSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2">{"// experience"}</h2>
+        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Experience</h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-12">
           Work <span className="text-gradient-primary">Experience</span>
         </h3>

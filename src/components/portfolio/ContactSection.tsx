@@ -11,7 +11,7 @@ const ContactSection = () => {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <h2 className="font-mono text-primary text-sm mb-2">{"// contact"}</h2>
+        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Contact</h2>
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
           Let's <span className="text-gradient-primary">Connect</span>
         </h3>
@@ -22,7 +22,9 @@ const ContactSection = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
-            href="mailto:madhanthangavelu04@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=madhanthangavelu04@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Mail className="w-4 h-4" />
@@ -48,13 +50,6 @@ const ContactSection = () => {
             <MapPin className="w-4 h-4" />
             Chennai, Tamil Nadu
           </span>
-        </div>
-
-        {/* Footer */}
-        <div className="border-t border-border pt-8 text-xs text-muted-foreground font-mono">
-          <span className="text-terminal-comment">{"/*"}</span>{" "}
-          Built with React & Tailwind{" "}
-          <span className="text-terminal-comment">{"*/"}</span>
         </div>
       </motion.div>
     </section>
