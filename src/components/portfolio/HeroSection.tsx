@@ -91,9 +91,10 @@ const HeroSection = () => {
                 Get in Touch
               </a>
               <a
-                href="https://drive.google.com/file/d/10M0KTlsEreaplhVeVJIbToeJbNqx424t/view?usp=sharing"
+                href="https://drive.google.com/uc?export=download&id=10M0KTlsEreaplhVeVJIbToeJbNqx424t"
                 target="_blank"
                 rel="noopener noreferrer"
+                download
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors bg-card/50 backdrop-blur-sm"
               >
                 <Download className="w-4 h-4" />
