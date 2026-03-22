@@ -13,30 +13,30 @@ const HeroSection = () => {
       />
 
       {/* Dynamic Glow orbs */}
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.5, 0.3],
           x: [0, 50, 0],
           y: [0, -50, 0]
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/10 blur-[120px]" 
+        className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/10 blur-[120px]"
       />
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           scale: [1, 1.5, 1],
           opacity: [0.2, 0.4, 0.2],
           x: [0, -50, 0],
           y: [0, 50, 0]
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-accent/10 blur-[100px]" 
+        className="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-accent/10 blur-[100px]"
       />
 
       <div className="section-container relative z-10 pt-16 md:pt-24 lg:pt-32">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-          
+
           {/* Left Column: Text & CTA */}
           <div className="flex-1 text-center md:text-left z-10">
             <motion.div
@@ -54,7 +54,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 text-gradient-primary uppercase"
             >
-              Madhan Thangavel
+              Madhan Thangavel.
             </motion.h1>
 
             <motion.h2
@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-3xl md:text-5xl font-bold text-foreground mb-8 tracking-tight"
             >
-              Python Backend Developer
+              Python Backend Developer.
             </motion.h2>
 
             <motion.p
@@ -72,7 +72,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 mb-10 leading-relaxed"
             >
-              Building scalable APIs & backend systems with Flask, PostgreSQL, Docker — 
+              Building scalable APIs & backend systems with Flask, PostgreSQL, Docker —
               and a growing passion for DevOps practices.
             </motion.p>
 
@@ -120,10 +120,10 @@ const HeroSection = () => {
           >
             {/* Decorative background glow that offsets behind image */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 -z-10 translate-x-4 translate-y-4"></div>
-            
+
             {/* Image Container */}
             <div className="w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/40 relative shadow-[0_0_40px_hsl(160_84%_39%/0.15)] bg-card group-hover:border-primary/70 group-hover:shadow-[0_0_60px_hsl(160_84%_39%/0.3)] transition-all duration-500 z-10 flex items-center justify-center">
-              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Madhan Thangavel" className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
+              <img src={`${import.meta.env.BASE_URL}profile.webp`} alt="Madhan Thangavel" className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
             </div>
           </motion.div>
         </div>

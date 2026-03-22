@@ -26,9 +26,8 @@ const Navbar = () => {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : ""
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : ""
+        }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -38,7 +37,7 @@ const Navbar = () => {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_10px_hsl(160_84%_39%/0.2)]"
           >
-            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Avatar" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}profile.webp`} alt="Avatar" className="w-full h-full object-cover" />
           </motion.div>
           <a href="#" className="font-mono text-primary font-bold text-sm hidden sm:block">
             {"madhan_thangavel()"}
