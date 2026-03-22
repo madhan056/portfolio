@@ -11,9 +11,8 @@ const ContactSection = () => {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Contact</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-4">
-          Let's <span className="text-gradient-primary">Connect</span>
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 font-mono">
+          return <span className="text-gradient-primary">Contact</span>
         </h3>
         <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
           Open to opportunities in Python Backend Development and DevOps roles. 

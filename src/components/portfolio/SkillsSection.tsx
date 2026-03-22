@@ -1,75 +1,46 @@
 import { motion } from "framer-motion";
 
-const skillCategories = [
-  {
-    title: "Programming & Backend",
-    color: "primary",
-    skills: ["Python", "Flask", "RESTful APIs", "SQL", "Git"],
-  },
-  {
-    title: "Databases",
-    color: "terminal-green",
-    skills: ["PostgreSQL", "MySQL", "Supabase", "Schema Design"],
-  },
-  {
-    title: "DevOps & Deployment",
-    color: "terminal-yellow",
-    skills: ["Docker", "Docker Compose", "Nginx", "GitHub Actions", "CI/CD", "Linux Server", "SSH", "SSL/Certbot"],
-  },
-  {
-    title: "API & Integrations",
-    color: "terminal-blue",
-    skills: ["Twilio API", "Meta WhatsApp API", "Wasabi S3", "Supabase Auth"],
-  },
-  {
-    title: "Web Technologies",
-    color: "accent",
-    skills: ["HTML5", "CSS3", "JavaScript", "Jinja Templates"],
-  },
-  {
-    title: "AI/ML & Automation",
-    color: "terminal-red",
-    skills: ["ArcFace", "YOLOv5", "YOLOv8", "OpenCV", "n8n"],
-  },
+// Use real colored svgs from devicon/jsdelivr
+const skillsList = [
+  { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "Django", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" },
+  { name: "Flask", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" },
+  { name: "Postman API", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+  { name: "PostgreSQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  { name: "Git", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+  { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "TensorFlow", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" },
+  { name: "Linux", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" },
 ];
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-container">
+    <section id="skills" className="section-container relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Skills</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-12">
-          Tech <span className="text-gradient-primary">Stack</span>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+          class <span className="text-gradient-primary">Skills:</span>
         </h3>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((cat, i) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
+          {skillsList.map((skill, i) => (
             <motion.div
-              key={cat.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              key={skill.name}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="p-6 rounded-xl bg-card border border-border hover:border-primary/20 transition-colors"
+              transition={{ duration: 0.4, delay: (i % 5) * 0.1 }}
+              className="group p-6 rounded-2xl bg-card border border-border flex flex-col items-center justify-center gap-4 hover:border-primary/40 hover:shadow-[0_0_30px_hsl(160_84%_39%/0.15)] transition-all duration-300 backdrop-blur-sm shadow-sm cursor-none"
             >
-              <h4 className="font-mono text-sm font-semibold text-primary mb-4">
-                {cat.title}
+              <img src={skill.iconUrl} alt={skill.name} className="w-12 h-12 object-contain group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_hsl(160_84%_39%/0.8)] transition-all duration-300" />
+              <h4 className="font-bold text-sm md:text-base text-muted-foreground group-hover:text-foreground tracking-wide text-center transition-colors">
+                {skill.name}
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {cat.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1.5 text-xs font-mono rounded-md bg-muted text-muted-foreground border border-border hover:text-primary hover:border-primary/30 transition-colors cursor-default"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </motion.div>
           ))}
         </div>

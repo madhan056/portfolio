@@ -27,9 +27,8 @@ const ProjectsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Projects</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-12">
-          Featured <span className="text-gradient-primary">Projects</span>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+          for project in <span className="text-gradient-primary">Projects:</span>
         </h3>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

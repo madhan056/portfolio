@@ -38,34 +38,33 @@ const HeroSection = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           
           {/* Left Column: Text & CTA */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-left z-10">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="font-mono text-xl md:text-3xl text-foreground font-semibold mb-4"
             >
-              {/* Terminal-style intro */}
-              <div className="inline-block code-block mb-8 text-left">
-                <span className="text-terminal-comment">Hello World</span>
-                <br />
-                <span className="text-terminal-blue">const</span>{" "}
-                <span className="text-terminal-yellow">developer</span>{" "}
-                <span className="text-foreground">=</span>{" "}
-                <span className="text-terminal-green">"Madhan Thangavel"</span>
-                <span className="text-foreground">;</span>
-              </div>
+              hello(): I'm
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 text-gradient-primary uppercase"
             >
-              <span className="text-foreground">Python</span>
-              <br />
-              <span className="text-gradient-primary">Backend Developer</span>
+              Madhan Thangavel
             </motion.h1>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-3xl md:text-5xl font-bold text-foreground mb-8 tracking-tight"
+            >
+              Python Backend Developer
+            </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}

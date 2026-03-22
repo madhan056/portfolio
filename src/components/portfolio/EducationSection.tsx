@@ -28,9 +28,8 @@ const EducationSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Education</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-12">
-          Academic <span className="text-gradient-primary">Background</span>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+          # <span className="text-gradient-primary">Education</span>
         </h3>
 
         <div className="grid md:grid-cols-3 gap-6">

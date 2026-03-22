@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "# About", href: "#about" },
+  { label: "class Skills:", href: "#skills" },
+  { label: "def Experience():", href: "#experience" },
+  { label: "for project in Projects:", href: "#projects" },
+  { label: "# Education", href: "#education" },
+  { label: "return Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -31,17 +31,27 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-mono text-primary font-bold text-sm">
-          {"<MT />"}
-        </a>
+        <div className="flex items-center gap-3">
+          {/* Animated Face / Avatar */}
+          <motion.div
+            animate={{ y: [0, -4, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_10px_hsl(160_84%_39%/0.2)]"
+          >
+            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Avatar" className="w-full h-full object-cover" />
+          </motion.div>
+          <a href="#" className="font-mono text-primary font-bold text-sm hidden sm:block">
+            {"madhan_thangavel()"}
+          </a>
+        </div>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
+              className="text-xs xl:text-sm text-foreground hover:text-primary transition-colors font-mono font-medium whitespace-nowrap"
             >
               {link.label}
             </a>

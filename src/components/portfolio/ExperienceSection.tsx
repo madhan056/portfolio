@@ -9,7 +9,6 @@ const experiences = [
     location: "Chennai",
     project: "WhatsApp Automation Tool (Inaiwazhi)",
     points: [
-      "Promoted from Trainee to full-time Python Developer based on performance",
       "Developed and maintained RESTful backend APIs using Flask with scalable architecture",
       "Designed and optimized PostgreSQL database schemas and queries",
       "Implemented media storage workflows using Wasabi S3-compatible cloud storage",
@@ -44,9 +43,8 @@ const ExperienceSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-mono text-primary text-sm mb-2 uppercase tracking-wider">Experience</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-12">
-          Work <span className="text-gradient-primary">Experience</span>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+          def <span className="text-gradient-primary">Experience():</span>
         </h3>
 
         <div className="relative">
