@@ -123,7 +123,7 @@ const HeroSection = () => {
             
             {/* Image Container */}
             <div className="w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/40 relative shadow-[0_0_40px_hsl(160_84%_39%/0.15)] bg-card group-hover:border-primary/70 group-hover:shadow-[0_0_60px_hsl(160_84%_39%/0.3)] transition-all duration-500 z-10 flex items-center justify-center">
-              <img src="/profile.jpg" alt="Madhan Thangavel" className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Madhan Thangavel" className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
             </div>
           </motion.div>
         </div>
