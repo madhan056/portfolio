@@ -40,9 +40,9 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.12 }}
-              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all hover:shadow-[0_0_30px_hsl(175_80%_50%/0.06)]"
+              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all hover:shadow-[0_0_30px_hsl(160_84%_39%/0.06)]"
             >
-              <project.icon className="w-8 h-8 text-primary mb-4 group-hover:drop-shadow-[0_0_8px_hsl(175_80%_50%/0.5)] transition-all" />
+              <project.icon className="w-8 h-8 text-primary mb-4 group-hover:drop-shadow-[0_0_8px_hsl(160_84%_39%/0.5)] transition-all" />
               <h4 className="text-lg font-semibold text-foreground mb-2">{project.title}</h4>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                 {project.description}

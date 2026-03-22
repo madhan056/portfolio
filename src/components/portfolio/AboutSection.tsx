@@ -50,7 +50,7 @@ const AboutSection = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="p-5 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors group"
               >
-                <item.icon className="w-6 h-6 text-primary mb-3 group-hover:drop-shadow-[0_0_8px_hsl(175_80%_50%/0.5)] transition-all" />
+                <item.icon className="w-6 h-6 text-primary mb-3 group-hover:drop-shadow-[0_0_8px_hsl(160_84%_39%/0.5)] transition-all" />
                 <p className="font-semibold text-foreground text-sm">{item.label}</p>
                 <p className="text-xs text-muted-foreground mt-1">{item.desc}</p>
               </motion.div>
