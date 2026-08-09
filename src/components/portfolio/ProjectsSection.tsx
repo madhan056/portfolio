@@ -9,7 +9,7 @@ const projects = [
     title: "InaiWazhi — WhatsApp SaaS Platform",
     tech: ["Flask", "PostgreSQL", "Supabase Auth", "Redis", "Celery", "RabbitMQ", "Twilio API", "Meta WhatsApp API", "Wasabi S3", "Docker"],
     description:
-      "B2B SaaS WhatsApp campaign automation platform. Sole backend developer responsible for the automation execution engine, Supabase JWT authentication-verification middleware layer (@verify_auth_token), contact module Redis caching, and Celery background task queues.",
+      "Developed scalable Flask-based applications, managed PostgreSQL/MySQL databases, integrated Twilio, Meta WhatsApp, Supabase, and Wasabi S3 services, and handled production debugging and performance optimization. Also contributed to Docker-based deployment, GitHub Actions CI/CD, Linux server administration, Nginx configuration, SSL setup, and technical documentation.",
   },
   {
     icon: Database,
