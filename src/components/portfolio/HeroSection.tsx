@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-3xl md:text-5xl font-bold text-foreground mb-8 tracking-tight"
             >
-              Python Backend Developer
+              Backend-Focused Full Stack Developer
             </motion.h2>
 
             <motion.p
@@ -72,8 +72,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 mb-10 leading-relaxed"
             >
-              Building scalable APIs & backend systems with Flask, PostgreSQL, Docker —
-              and a growing passion for DevOps practices.
+              Building production-ready APIs and backend systems with Python, Flask, PostgreSQL, Docker, and CI/CD — with a strong interest in DevOps and cloud deployment.
             </motion.p>
 
             <motion.div
@@ -98,6 +97,15 @@ const HeroSection = () => {
               >
                 <Download className="w-4 h-4" />
                 Resume
+              </a>
+              <a
+                href="https://github.com/Madhan056"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors bg-card/50 backdrop-blur-sm"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/madhan04"

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin, MapPin, Phone, Github, Globe } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -14,20 +14,27 @@ const ContactSection = () => {
         <h3 className="text-3xl md:text-4xl font-bold mb-4 font-mono">
           return <span className="text-gradient-primary">Contact</span>
         </h3>
-        <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-          Open to opportunities in Python Backend Development and DevOps roles. 
-          Feel free to reach out!
+        <p className="text-muted-foreground mb-10 max-w-lg mx-auto leading-relaxed">
+          Open to opportunities in Python Backend Development, Flask/Django REST Framework roles, and Software Engineering.
+          Feel free to connect!
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=madhanthangavelu04@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:madhanthangavelu04@gmail.com"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Mail className="w-4 h-4" />
             madhanthangavelu04@gmail.com
+          </a>
+          <a
+            href="https://github.com/Madhan056"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
+          >
+            <Github className="w-4 h-4" />
+            github.com/Madhan056
           </a>
           <a
             href="https://www.linkedin.com/in/madhan04"
@@ -36,7 +43,16 @@ const ContactSection = () => {
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Linkedin className="w-4 h-4" />
-            LinkedIn
+            linkedin.com/in/madhan04
+          </a>
+          <a
+            href="https://madhan056.github.io/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
+          >
+            <Globe className="w-4 h-4" />
+            madhan056.github.io/portfolio
           </a>
           <a
             href="tel:+919360739056"

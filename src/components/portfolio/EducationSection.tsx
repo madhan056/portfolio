@@ -4,18 +4,21 @@ import { GraduationCap } from "lucide-react";
 const education = [
   {
     degree: "B.Sc. in Computer Science",
-    institution: "St. Thomas College of Arts & Science (affiliated to University of Madras)",
-    period: "Jun 2021 – May 2024",
+    institution: "St. Thomas College of Arts & Science (University of Madras)",
+    period: "2021 – 2024",
+    score: "65%",
   },
   {
     degree: "Higher Secondary (HSC)",
-    institution: "Sri Sayee Vivekananda Vidyalaya Matriculation Higher Secondary School",
-    period: "Passed out - 2021",
+    institution: "Sri Sayee Vivekananda Vidyalaya MHSS",
+    period: "2021",
+    score: "87%",
   },
   {
     degree: "Secondary School (SSLC)",
-    institution: "Sri Sayee Vivekananda Vidyalaya Matriculation Higher Secondary School",
-    period: "Passed out - 2019",
+    institution: "Sri Sayee Vivekananda Vidyalaya MHSS",
+    period: "2019",
+    score: "80%",
   },
 ];
 
@@ -43,7 +46,12 @@ const EducationSection = () => {
               className="p-6 rounded-xl bg-card border border-border hover:border-primary/20 transition-colors"
             >
               <GraduationCap className="w-6 h-6 text-primary mb-3" />
-              <h4 className="font-semibold text-foreground text-sm mb-1">{edu.degree}</h4>
+              <div className="flex items-center justify-between gap-2 mb-1">
+                <h4 className="font-semibold text-foreground text-sm">{edu.degree}</h4>
+                <span className="text-[11px] font-mono text-primary bg-primary/10 border border-primary/20 px-2 py-0.5 rounded">
+                  Score: {edu.score}
+                </span>
+              </div>
               <p className="text-xs text-primary font-mono mb-2">{edu.institution}</p>
               <p className="text-xs text-muted-foreground">{edu.period}</p>
             </motion.div>

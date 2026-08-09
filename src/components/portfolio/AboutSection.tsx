@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Server, Database, Container, Terminal } from "lucide-react";
 
 const highlights = [
-  { icon: Server, label: "Backend APIs", desc: "Flask & RESTful services" },
-  { icon: Database, label: "Databases", desc: "PostgreSQL & MySQL" },
-  { icon: Container, label: "DevOps", desc: "Docker, CI/CD, Nginx, gitaction workflow" },
-  { icon: Terminal, label: "Linux", desc: "Server deployment & SSH" },
+  { icon: Server, label: "Backend APIs", desc: "Flask & Django REST Framework" },
+  { icon: Database, label: "Databases & Caching", desc: "PostgreSQL, MySQL & Redis" },
+  { icon: Container, label: "DevOps & CI/CD", desc: "Docker, GitHub Actions & Nginx" },
+  { icon: Terminal, label: "Cloud & Linux", desc: "Wasabi S3, SSH & SSL/Certbot" },
 ];
 
 const AboutSection = () => {
@@ -24,13 +24,16 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Python Backend Developer with hands-on experience building scalable web applications and RESTful APIs using Python and Flask. Experienced in PostgreSQL database design, API integration, and backend architecture, with a focus on clean code and secure data handling.
+              Backend-focused Full Stack Developer with 1+ years of combined production experience, specializing in Python, Flask, and Django REST Framework.
             </p>
             <p>
-              Skilled in Docker, CI/CD (GitHub Actions), Linux server deployment, and Nginx configuration, with experience deploying applications on Linode and Hostinger cloud servers. Worked with Twilio API, Meta WhatsApp API, Supabase authentication, and Wasabi S3 cloud storage for messaging automation and backend services.
+              Experienced in relational database design (PostgreSQL/MySQL), query and index optimization, background processing (Celery & RabbitMQ), cloud storage (Wasabi S3), and third-party integrations (Twilio & Meta WhatsApp Business API).
             </p>
             <p>
-              Also have exposure to Computer Vision and AI models (YOLOv5, YOLOv8, ArcFace) and workflow automation using n8n.
+              Skilled in Docker, CI/CD (GitHub Actions), Linux server deployment, and Nginx configuration, with experience deploying applications on Linode and Hostinger cloud servers. Worked with Twilio API, Meta WhatsApp API, Supabase Authentication, and Wasabi S3 cloud storage to support messaging automation and backend services.
+            </p>
+            <p>
+              Also experienced with Computer Vision and AI models (YOLOv5, YOLOv8, and ArcFace), along with workflow automation using n8n.
             </p>
             <p>
               Passionate about developing reliable backend systems and eager to contribute to innovative engineering teams while expanding expertise in backend architecture and DevOps practices.
