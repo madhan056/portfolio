@@ -3,7 +3,7 @@
 // means editing it here.
 export const profile = {
   name: "Madhan Thangavel",
-  title: "Backend-Focused Full Stack Developer",
+  title: "Python Full Stack Developer",
   location: "Chennai, Tamil Nadu",
   email: "madhanthangavelu04@gmail.com",
   phone: {

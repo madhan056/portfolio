@@ -24,7 +24,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Backend-focused Full Stack Developer with 1+ years of combined production experience, specializing in Python, Flask, and Django REST Framework.
+              Python Full Stack Developer with 1+ years of combined production experience, specializing in Python, Flask, and Django REST Framework.
             </p>
             <p>
               Experienced in relational database design (PostgreSQL/MySQL), query and index optimization, background processing (Celery & RabbitMQ), cloud storage (Wasabi S3), and third-party integrations (Twilio & Meta WhatsApp Business API).
@@ -33,10 +33,10 @@ const AboutSection = () => {
               Skilled in Docker, CI/CD (GitHub Actions), Linux server deployment, and Nginx configuration, with experience deploying applications on Linode and Hostinger cloud servers. Worked with Twilio API, Meta WhatsApp API, Supabase Authentication, and Wasabi S3 cloud storage to support messaging automation and backend services.
             </p>
             <p>
-              Also experienced with Computer Vision and AI models (YOLOv5, YOLOv8, and ArcFace), along with workflow automation using n8n.
+              Also experienced with Computer Vision and AI models (YOLOv5, YOLOv8, ArcFace, and InsightFace), along with workflow automation using n8n.
             </p>
             <p>
-              Passionate about developing reliable backend systems and eager to contribute to innovative engineering teams while expanding expertise in backend architecture and DevOps practices.
+              Passionate about developing reliable backend systems and eager to contribute to innovative engineering teams while expanding expertise across backend architecture, DevOps, and full-stack development.
             </p>
           </div>
 

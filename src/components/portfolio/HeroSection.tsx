@@ -73,7 +73,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 mb-10 leading-relaxed"
             >
-              Building production-ready APIs and backend systems with Python, Flask, PostgreSQL, Docker, and CI/CD — with a strong interest in DevOps and cloud deployment.
+              Python Developer with 1+ year of production experience building backend services and REST APIs using Python, Flask, Django REST Framework, PostgreSQL, Docker, and CI/CD, with full-stack development exposure through React.js.
             </motion.p>
 
             <motion.div

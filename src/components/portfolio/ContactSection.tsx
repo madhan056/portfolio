@@ -16,7 +16,7 @@ const ContactSection = () => {
           return <span className="text-gradient-primary">Contact</span>
         </h2>
         <p className="text-muted-foreground mb-10 max-w-lg mx-auto leading-relaxed">
-          Open to opportunities in Python Backend Development, Flask/Django REST Framework roles, and Software Engineering.
+          Open to opportunities in Python Full Stack Development, Backend Engineering, and Flask/Django REST Framework roles.
           Feel free to connect!
         </p>
 

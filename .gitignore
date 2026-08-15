@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal reference documents (never committed)
+Madhan_Thangavel_Master_Resume.docx
+Madhan_SoftwareEngineer.pdf

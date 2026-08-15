@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Backend & Core",
-    skills: ["Python", "Flask", "Django REST Framework", "REST APIs", "OOP Principles"],
+    skills: ["Python", "SQL", "Flask", "Django REST Framework", "REST APIs", "OOP Principles"],
   },
   {
     title: "Databases & Caching",
@@ -22,13 +22,22 @@ const skillCategories = [
     skills: ["Docker", "Docker Compose", "GitHub Actions (CI/CD)", "Nginx Reverse Proxy", "Linux / Ubuntu", "SSL / Certbot"],
   },
   {
+    title: "Full-Stack Exposure",
+    skills: ["React.js", "Next.js (Collaboration)", "JavaScript", "TypeScript", "HTML5 / CSS3"],
+  },
+  {
     title: "AI & Computer Vision",
-    skills: ["ArcFace", "OpenCV", "YOLOv5 / YOLOv8", "n8n Workflows"],
+    skills: ["ArcFace", "InsightFace", "OpenCV", "YOLOv5 / YOLOv8", "n8n Workflows"],
+  },
+  {
+    title: "Tools & AI-Assisted Dev",
+    skills: ["Git", "GitHub", "Postman", "VS Code", "ChatGPT", "Claude", "GitHub Copilot"],
   },
 ];
 
 const skillsList = [
   { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "React.js", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
   { name: "Flask", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg", imgClass: "invert brightness-200" },
   { name: "Django REST Framework", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg", imgClass: "invert brightness-200" },
   { name: "PostgreSQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },

@@ -7,25 +7,25 @@ const projects = [
     category: "Professional SaaS",
     company: "SoftClinch",
     title: "InaiWazhi — WhatsApp SaaS Platform",
-    tech: ["Flask", "PostgreSQL", "Supabase Auth", "Redis", "Celery", "RabbitMQ", "Twilio API", "Meta WhatsApp API", "Wasabi S3", "Docker"],
+    tech: ["Flask", "PostgreSQL", "Supabase Auth", "Redis", "Celery", "RabbitMQ", "Twilio API", "Meta WhatsApp API", "JWT", "Wasabi S3", "Docker"],
     description:
-      "Developed scalable Flask-based applications, managed PostgreSQL/MySQL databases, integrated Twilio, Meta WhatsApp, Supabase, and Wasabi S3 services, and handled production debugging and performance optimization. Also contributed to Docker-based deployment, GitHub Actions CI/CD, Linux server administration, Nginx configuration, SSL setup, and technical documentation.",
+      "Sole backend developer for the automation module of this live B2B SaaS platform — built multi-branch WhatsApp automation flows, Redis-cached the contact module, and added Supabase-based auth-verification middleware, alongside scalable Flask APIs, PostgreSQL/MySQL database work, and Twilio/Meta WhatsApp/Wasabi S3 integrations. Also handled production debugging, Docker-based deployment, GitHub Actions CI/CD, and Nginx/SSL configuration.",
   },
   {
     icon: Database,
     category: "Enterprise Analytics",
     company: "SoftClinch",
     title: "SAP Financial Reporting Platform",
-    tech: ["Django REST Framework", "PostgreSQL", "Psycopg", "Keyset Pagination", "Data Migration", "Docker"],
+    tech: ["Django REST Framework", "PostgreSQL", "Psycopg", "Keyset Pagination", "Data Migration", "Docker", "GitHub Actions", "Nginx"],
     description:
-      "Enterprise accounting and financial reporting backend delivering secure APIs for historical SAP data analysis. Designed a 20+ table PostgreSQL schema (hundreds of columns), performed bulk staging data migrations, and implemented keyset pagination for high-volume dataset queries.",
+      "Enterprise accounting and financial reporting backend delivering secure APIs for historical SAP data analysis. Designed a 20+ table PostgreSQL schema (hundreds of columns), performed bulk staging data migrations, implemented keyset pagination for high-volume dataset queries, tested endpoints in Postman, and deployed the service as a Dockerized Django/Gunicorn app behind Nginx with GitHub Actions CI/CD.",
   },
   {
     icon: Bot,
     category: "AI & Computer Vision",
     company: "LIBS",
     title: "Face Recognition Attendance System",
-    tech: ["Python", "ArcFace", "OpenCV", "MySQL", "YOLOv5/v8", "n8n", "Mistral AI"],
+    tech: ["Python", "ArcFace", "InsightFace", "OpenCV", "MySQL", "YOLOv5/v8", "n8n", "Mistral AI"],
     description:
       "Real-time automated face-recognition attendance management system integrating IP camera feeds with MySQL database logging. Built with ArcFace, OpenCV, and insightface, alongside object detection models (YOLOv5/v8) and n8n AI workflow automation.",
   },
@@ -34,9 +34,9 @@ const projects = [
     category: "Backend REST APIs",
     company: "Academic / Personal",
     title: "Task Management System",
-    tech: ["Django REST Framework", "MySQL", "RESTful APIs", "Pandas", "CSV Export"],
+    tech: ["Django REST Framework", "React.js", "MySQL", "RESTful APIs", "Pandas", "CSV Export"],
     description:
-      "Task management backend service built using Django REST Framework and MySQL. Delivers RESTful APIs for task CRUD operations, priority filtering, deadline tracking, operational analytics data generation, and CSV report export.",
+      "Full-stack task management app with a Django REST Framework and MySQL backend and a React.js frontend. Delivers RESTful APIs for task CRUD operations, priority filtering, deadline tracking, operational analytics data generation, and CSV report export.",
   },
 ];
 
