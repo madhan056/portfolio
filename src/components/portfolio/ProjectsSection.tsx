@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageSquare, Database, Bot, CheckSquare, Layers } from "lucide-react";
+import { MessageSquare, Database, Bot, CheckSquare } from "lucide-react";
 
 const projects = [
   {

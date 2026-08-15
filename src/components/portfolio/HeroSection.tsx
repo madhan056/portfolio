@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import { profile, mailtoHref } from "@/data/profile";
 
 const HeroSection = () => {
   return (
@@ -54,7 +55,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 text-gradient-primary uppercase"
             >
-              Madhan Thangavel
+              {profile.name}
             </motion.h1>
 
             <motion.h2
@@ -63,7 +64,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-3xl md:text-5xl font-bold text-foreground mb-8 tracking-tight"
             >
-              Backend-Focused Full Stack Developer
+              {profile.title}
             </motion.h2>
 
             <motion.p
@@ -82,14 +83,14 @@ const HeroSection = () => {
               className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-8"
             >
               <a
-                href="mailto:madhanthangavelu04@gmail.com"
+                href={mailtoHref}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
               >
                 <Mail className="w-4 h-4" />
                 Get in Touch
               </a>
               <a
-                href="https://drive.google.com/uc?export=download&id=10M0KTlsEreaplhVeVJIbToeJbNqx424t"
+                href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -99,7 +100,7 @@ const HeroSection = () => {
                 Resume
               </a>
               <a
-                href="https://github.com/Madhan056"
+                href={profile.github.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors bg-card/50 backdrop-blur-sm"
@@ -108,7 +109,7 @@ const HeroSection = () => {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/madhan04"
+                href={profile.linkedin.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors bg-card/50 backdrop-blur-sm"
@@ -131,7 +132,7 @@ const HeroSection = () => {
 
             {/* Image Container */}
             <div className="w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/40 relative shadow-[0_0_40px_hsl(160_84%_39%/0.15)] bg-card group-hover:border-primary/70 group-hover:shadow-[0_0_60px_hsl(160_84%_39%/0.3)] transition-all duration-500 z-10 flex items-center justify-center">
-              <img src={`${import.meta.env.BASE_URL}profile.webp`} alt="Madhan Thangavel" className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
+              <img src={`${import.meta.env.BASE_URL}profile.webp`} alt={profile.name} className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" />
             </div>
           </motion.div>
         </div>

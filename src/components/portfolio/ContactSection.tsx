@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin, MapPin, Phone, Github, Globe } from "lucide-react";
+import { profile, mailtoHref } from "@/data/profile";
 
 const ContactSection = () => {
   return (
@@ -21,49 +22,49 @@ const ContactSection = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
-            href="mailto:madhanthangavelu04@gmail.com"
+            href={mailtoHref}
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Mail className="w-4 h-4" />
-            madhanthangavelu04@gmail.com
+            {profile.email}
           </a>
           <a
-            href="https://github.com/Madhan056"
+            href={profile.github.href}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Github className="w-4 h-4" />
-            github.com/Madhan056
+            {profile.github.display}
           </a>
           <a
-            href="https://www.linkedin.com/in/madhan04"
+            href={profile.linkedin.href}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Linkedin className="w-4 h-4" />
-            linkedin.com/in/madhan04
+            {profile.linkedin.display}
           </a>
           <a
-            href="https://madhan056.github.io/portfolio"
+            href={profile.website.href}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Globe className="w-4 h-4" />
-            madhan056.github.io/portfolio
+            {profile.website.display}
           </a>
           <a
-            href="tel:+919360739056"
+            href={profile.phone.href}
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border hover:border-primary/40 text-foreground hover:text-primary transition-colors text-sm"
           >
             <Phone className="w-4 h-4" />
-            +91 93607 39056
+            {profile.phone.display}
           </a>
           <span className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-card border border-border text-muted-foreground text-sm">
             <MapPin className="w-4 h-4" />
-            Chennai, Tamil Nadu
+            {profile.location}
           </span>
         </div>
       </motion.div>

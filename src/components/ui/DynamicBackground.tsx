@@ -18,7 +18,7 @@ const DynamicBackground = () => {
     let animationFrameId: number;
     let isPaused = document.hidden;
     let drops: number[] = [];
-    let fontSize = 14;
+    const fontSize = 14;
     let columns = 0;
 
     const resizeCanvas = () => {
