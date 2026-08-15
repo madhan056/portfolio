@@ -1,15 +1,22 @@
 import React, { useEffect, useRef } from 'react';
+import { useReducedMotion } from 'framer-motion';
 
 const DynamicBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
+    // Skip the animated canvas entirely when the user has asked for reduced
+    // motion — it's purely decorative and never conveys information.
+    if (prefersReducedMotion) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isPaused = document.hidden;
     let drops: number[] = [];
     let fontSize = 14;
     let columns = 0;
@@ -65,20 +72,32 @@ const DynamicBackground = () => {
     // Throttle animation speed
     let lastTime = 0;
     const animate = (time: number) => {
-      if (time - lastTime > 50) {
+      if (!isPaused && time - lastTime > 50) {
         draw();
         lastTime = time;
       }
       animationFrameId = requestAnimationFrame(animate);
     };
 
+    // Stop drawing while the tab isn't visible instead of burning CPU/battery
+    // in the background indefinitely.
+    const handleVisibilityChange = () => {
+      isPaused = document.hidden;
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     animationFrameId = requestAnimationFrame(animate);
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [prefersReducedMotion]);
+
+  if (prefersReducedMotion) {
+    return <div className="fixed inset-0 z-0 pointer-events-none bg-background" />;
+  }
 
   return (
     <div className="fixed inset-0 z-0 pointer-events-none bg-background">

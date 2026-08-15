@@ -36,7 +36,7 @@ const skillsList = [
   { name: "Redis", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
   { name: "RESTful API", iconUrl: "https://img.icons8.com/fluency/96/api-settings.png" },
   { name: "Celery & RabbitMQ", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg" },
-  { name: "Twilio & WhatsApp API", iconUrl: "https://cdn.simpleicons.org/twilio" },
+  { name: "Twilio & WhatsApp API", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twilio/twilio-original.svg" },
   { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
   { name: "Wasabi (S3 Storage)", iconUrl: "https://cdn.simpleicons.org/wasabi/23C02E" },
   { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
