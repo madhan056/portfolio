@@ -22,7 +22,7 @@ export const profile = {
     display: "madhan056.github.io/portfolio",
     href: "https://madhan056.github.io/portfolio",
   },
-  resumeUrl: "https://drive.google.com/uc?export=download&id=10M0KTlsEreaplhVeVJIbToeJbNqx424t",
+  resumeUrl: "https://drive.google.com/uc?export=download&id=1IPMGYZX6LBMmuSZKC68hZjk1FeQBwT29",
 } as const;
 
 export const mailtoHref = `mailto:${profile.email}`;
