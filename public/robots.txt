@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://madhan056.github.io/portfolio/sitemap.xml
