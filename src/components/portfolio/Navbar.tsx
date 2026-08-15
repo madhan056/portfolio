@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -14,6 +14,7 @@ const links = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -21,8 +22,29 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    const onClickOutside = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setMobileOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("mousedown", onClickOutside);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("mousedown", onClickOutside);
+    };
+  }, [mobileOpen]);
+
   return (
     <motion.nav
+      ref={navRef}
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -37,7 +59,7 @@ const Navbar = () => {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/40 shadow-[0_0_10px_hsl(160_84%_39%/0.2)] bg-card"
           >
-            <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="Avatar" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="Madhan Thangavel" className="w-full h-full object-cover" />
           </motion.div>
           <a href="#" className="font-mono text-primary font-bold text-sm hidden sm:block">
             {"madhan_thangavel()"}
@@ -59,8 +81,12 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          type="button"
+          className="lg:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-nav-menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -69,9 +95,10 @@ const Navbar = () => {
       {/* Mobile menu */}
       {mobileOpen && (
         <motion.div
+          id="mobile-nav-menu"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border px-6 py-4"
+          className="lg:hidden bg-background/95 backdrop-blur-lg border-b border-border px-6 py-4"
         >
           {links.map((link) => (
             <a

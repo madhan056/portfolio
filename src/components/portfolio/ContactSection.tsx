@@ -11,9 +11,9 @@ const ContactSection = () => {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 font-mono">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-mono">
           return <span className="text-gradient-primary">Contact</span>
-        </h3>
+        </h2>
         <p className="text-muted-foreground mb-10 max-w-lg mx-auto leading-relaxed">
           Open to opportunities in Python Backend Development, Flask/Django REST Framework roles, and Software Engineering.
           Feel free to connect!

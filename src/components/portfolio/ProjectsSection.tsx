@@ -49,9 +49,9 @@ const ProjectsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
           for project in <span className="text-gradient-primary">Projects:</span>
-        </h3>
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
                   </span>
                 </div>
 
-                <h4 className="text-xl font-bold text-foreground mb-3">{project.title}</h4>
+                <h3 className="text-xl font-bold text-foreground mb-3">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
                 </p>

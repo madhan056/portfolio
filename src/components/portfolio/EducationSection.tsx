@@ -31,9 +31,9 @@ const EducationSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
           # <span className="text-gradient-primary">Education</span>
-        </h3>
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {education.map((edu, i) => (
@@ -47,7 +47,7 @@ const EducationSection = () => {
             >
               <GraduationCap className="w-6 h-6 text-primary mb-3" />
               <div className="flex items-center justify-between gap-2 mb-1">
-                <h4 className="font-semibold text-foreground text-sm">{edu.degree}</h4>
+                <h3 className="font-semibold text-foreground text-sm">{edu.degree}</h3>
                 <span className="text-[11px] font-mono text-primary bg-primary/10 border border-primary/20 px-2 py-0.5 rounded">
                   Score: {edu.score}
                 </span>

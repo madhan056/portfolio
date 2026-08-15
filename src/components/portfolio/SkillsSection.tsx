@@ -57,9 +57,9 @@ const SkillsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 font-mono text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 font-mono text-left">
           class <span className="text-gradient-primary">Skills:</span>
-        </h3>
+        </h2>
 
         {/* Categorized Skills for ATS & Quick Recruiter Scanning */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -72,9 +72,9 @@ const SkillsSection = () => {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="p-5 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all hover:shadow-[0_0_20px_hsl(160_84%_39%/0.08)]"
             >
-              <h4 className="text-sm font-semibold text-primary font-mono mb-3 uppercase tracking-wider">
+              <h3 className="text-sm font-semibold text-primary font-mono mb-3 uppercase tracking-wider">
                 {cat.title}
-              </h4>
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
                   <span

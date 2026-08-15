@@ -17,9 +17,9 @@ const AboutSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 font-mono text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 font-mono text-left">
           # <span className="text-gradient-primary">About</span>
-        </h3>
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-4 text-muted-foreground leading-relaxed">

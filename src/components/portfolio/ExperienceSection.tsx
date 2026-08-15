@@ -111,9 +111,9 @@ const ExperienceSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 font-mono text-left">
           def <span className="text-gradient-primary">Experience():</span>
-        </h3>
+        </h2>
 
         <div className="relative">
           {/* Timeline line */}
@@ -136,7 +136,7 @@ const ExperienceSection = () => {
                   {/* Header Row */}
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                      <h4 className="text-xl font-bold text-foreground">{exp.role}</h4>
+                      <h3 className="text-xl font-bold text-foreground">{exp.role}</h3>
                       <p className="text-primary font-mono text-base font-medium">{exp.company}</p>
                     </div>
                     <div className="flex flex-col items-end gap-1">
@@ -181,7 +181,7 @@ const ExperienceSection = () => {
                         <div key={k} className="p-4 rounded-xl bg-background/50 border border-border/40">
                           <div className="flex items-center gap-2 mb-1">
                             <Briefcase className="w-4 h-4 text-primary shrink-0" />
-                            <h5 className="text-base font-semibold text-foreground">{proj.name}</h5>
+                            <h4 className="text-base font-semibold text-foreground">{proj.name}</h4>
                           </div>
                           <p className="text-xs text-muted-foreground mb-3 font-mono">
                             {proj.desc}
